@@ -15,7 +15,7 @@ RUN gradle bootJar -x test --no-daemon
 
 
 # imagen ligera de OpenJDK 21 para ejecutar
-FROM openjdk:21-jdk-slim
+FROM eclipse-temurin:21-jdk
 
 # definimos el directorio de trabajo
 WORKDIR /app
